@@ -4,42 +4,18 @@ export const Styled = styled.div`
   width: 50%;
   height: 50%;
   display: flex;
-  align-items: start;
-  justify-content: start;
-`;
+  place-content: start;
+  place-items: start;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  place-content: center;
 
-export const StyledTable = styled.table`
-  width: 100%;
-  height: 20%;
-  border: 1px solid #fff;
-  padding: 0;
-  margin: 0;
-  border-collapse: collapse;
-  /* table-layout: fixed; */
-`;
-export const StyledThead = styled.thead``;
+  .recharts-sector {
+    outline: none;
+  }
 
-export const StyledTh = styled.th`
-  border: 1px solid #fff;
-`;
-
-export const StyledTbody = styled.tbody``;
-
-export const StyledTr = styled.tr``;
-
-export const StyledTd = styled.td`
-  border: 1px solid #fff;
-`;
-
-export const StyledTrContaier = styled.tr`
-  width: 100%;
-`;
-export const StyledThContainer = styled.th`
-  background-color: red;
-  border: 1px solid #fff;
-
-`;
-export const StyledThGroup = styled.th<{ largura: number }>`
-  width: ${({ largura }) =>
-    largura ? `${largura}vw` : "auto"}; // Usa a largura definida no style
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
