@@ -1,3 +1,4 @@
+import InputTemplateDate from "../component/InputTemplateDate";
 import {
   Styled,
   StyledTable,
@@ -14,6 +15,8 @@ import {
 export default function TesteStorege() {
   return (
     <Styled>
+      <InputTemplateDate label="Data (visual)" />
+
       <StyledTable>
         <StyledThead>
           <StyledTr>

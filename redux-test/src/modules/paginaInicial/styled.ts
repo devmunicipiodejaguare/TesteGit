@@ -4,6 +4,8 @@ export const Styled = styled.div`
   width: 50%;
   height: 50%;
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
   align-items: start;
   justify-content: start;
 `;
@@ -37,9 +39,7 @@ export const StyledTrContaier = styled.tr`
 export const StyledThContainer = styled.th`
   background-color: red;
   border: 1px solid #fff;
-
 `;
 export const StyledThGroup = styled.th<{ largura: number }>`
-  width: ${({ largura }) =>
-    largura ? `${largura}vw` : "auto"}; // Usa a largura definida no style
+  width: ${({ largura }) => (largura ? `${largura}vw` : "auto")};
 `;
