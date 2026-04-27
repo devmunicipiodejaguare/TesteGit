@@ -1,4 +1,4 @@
-import InputTemplateDate from "../component/InputTemplateDate";
+import InputTemplateDate from "../component/inputTemplateDate";
 import {
   Styled,
   StyledTable,
